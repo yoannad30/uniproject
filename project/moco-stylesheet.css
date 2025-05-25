@@ -1,0 +1,835 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /* box-sizing: border-box; */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+span {
+    color: rgb(243, 135, 184);
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 228, 233);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 5rem;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    transition: all 0.3s ease;
+
+}
+
+nav a:hover {
+    transition: all 0.3s ease;
+    color: rgb(243, 135, 184);
+
+}
+
+/* index.html */
+.greeting {
+    padding: 5px;
+    background-color: rgb(243, 181, 203);
+    text-align: center;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    color: black;
+    background-color: rgb(247, 212, 224);
+    margin-bottom: 5px;
+}
+
+.wellcome {
+    background-image: linear-gradient(rgba(138, 133, 133, 0.7), rgba(139, 133, 133, 0.7)), url('images/moco-london.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: white;
+    flex-direction: column;
+
+}
+
+.wellcome img {
+    width: 50%;
+
+}
+
+.gallery {
+    flex-direction: row-reverse;
+    background-color: white;
+
+}
+
+.gallery-layout img {
+    max-width: 200px;
+}
+
+.layout-photos {
+    display: flex;
+
+}
+
+.practical-info {
+    background-color: black;
+    color: white;
+}
+
+.practical-info li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.practical-info p {
+    margin-top: 10px;
+}
+
+.practical-info hr {
+    width: 100%;
+    border: solid rgb(243, 135, 184);
+}
+
+.heading {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+.tabel-prices {
+    background-image: linear-gradient(rgba(138, 133, 133, 0.7), rgba(139, 133, 133, 0.7)), url('images/moco-london.png');
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: row-reverse;
+}
+
+.table {
+    background-color: rgba(243, 135, 184, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+table td,
+th {
+    border: none;
+    border-bottom: 2px solid;
+    padding: 5px;
+
+}
+
+th {
+    text-align: left;
+    border-right: none;
+}
+
+td:last-child,
+th:last-child {
+    border-right: none;
+}
+
+
+.slideshow-reviews {
+    height: 250px;
+    position: relative;
+    background-color: black;
+
+}
+
+.slideshow-reviews h2 {
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.slideshow {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(243, 135, 184, 0.3);
+
+}
+
+.slidetext {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.slidetext p {
+    text-align: center;
+    margin-bottom: 10px 0;
+}
+
+.stars {
+    color: rgb(243, 135, 184);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: -22px 250px;
+    padding: 20px;
+    color: rgb(243, 135, 184);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    color: rgb(252, 228, 233);
+}
+
+.news-events {
+    margin-top: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+.news-events h2 {
+    margin-top: 10px;
+    color: rgb(243, 135, 184);
+}
+
+.news-events h3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.news-layout {
+    display: flex;
+    align-items: center;
+
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(243, 135, 184, 0.3);
+    border-radius: 20px;
+}
+
+.news button {
+    width: 100px;
+}
+
+
+/* moco-aboutus.html */
+.moco-moto-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(138, 133, 133, 0.7), rgba(139, 133, 133, 0.7)),
+        url('images/moco-museum-london-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    height: 500px;
+}
+
+.moco-moto-about-us h1 {
+    font-size: 3rem;
+
+    text-transform: uppercase;
+    font-style: oblique;
+    text-align: center;
+    white-space: pre-line;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 1px 1px 2px  rgb(243, 135, 184); */
+}
+
+.moco-container-history {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.moco-container-history h2 {
+    font-size: 2rem;
+    color: rgb(243, 135, 184);
+    margin: 10px;
+    align-self: center;
+}
+
+.moco-container-history .history {
+    width: 70%;
+    margin: 10px;
+}
+
+.history p {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+.moco-container-team {
+    height: 400px;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(5, 5, 5);
+    color: white;
+}
+
+.moco-container-team h2 {
+    font-size: 2rem;
+    margin: 10px;
+    align-self: center;
+}
+
+.moco-team-person {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.moco-team-person img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.moco-team-person h3 {
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+    transition: all 0.3s ease;
+    color: white;
+
+}
+
+.moco-team-person h3:hover {
+    transform: scale(1);
+    transition: all 0.3s ease;
+    font-weight: 700;
+    color: rgb(243, 135, 184);
+}
+
+.moco-container-awards {
+
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.moco-container-awards h2 {
+    font-size: 2rem;
+    color: rgb(243, 135, 184);
+    margin: 10px;
+    align-self: center;
+}
+
+
+.moco-container-awards img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.moco-container-awards>div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.moco-awards {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    color: rgb(243, 135, 184);
+}
+
+.moco-container-partners {
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(138, 133, 133, 0.7), rgba(139, 133, 133, 0.7)),
+        url('images/moco-museum-london-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.moco-container-partners h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    align-self: center;
+}
+
+
+.moco-container-partners img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.moco-container-partners>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.moco-partners-about-us {
+    background-color: rgba(243, 135, 184, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    line-height: 1.3;
+    color: white;
+}
+
+.moco-container-locations {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+
+.moco-container-locations h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    align-self: center;
+}
+
+.moco-locations {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.location-img img {
+    max-width: 80%;
+    border-radius: 20px;
+
+
+}
+
+.country {
+    max-width: 80%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(243, 135, 184, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+
+}
+
+
+
+/* izkustvo.html */
+
+
+.exhibitions-header {
+    padding: 10px;
+    margin: 0;
+    color: rgb(243, 135, 184);
+    background-color: white;
+
+
+}
+
+.exhibitions-header h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(243, 135, 184);
+}
+
+.exhibition-layout {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.exhibition-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibition-container img {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.exhibition-container h3 {
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.exhibition-container p {
+    margin: 0;
+}
+
+.exhibition-container h4 {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: rgb(243, 135, 184);
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    border-radius: 30px;
+    align-self: flex-end;
+    color: white;
+    font-variant: small-caps;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(252, 228, 233);
+    color: rgb(243, 135, 184);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.artists-layout {
+    background-color: white;
+    display: flex;
+}
+
+.exhibition-artist-header {
+
+    background-color: white;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.exhibition-artist-header h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(243, 135, 184);
+}
+
+.moco-artists-layout {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 500px;
+}
+
+.artist {
+    position: relative;
+
+}
+
+.artist-img img {
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+
+}
+
+.img-text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.artist:hover .artist-img img {
+    opacity: 0.3;
+}
+
+.artist:hover .img-text {
+    opacity: 1;
+}
+
+.artist-text h3 {
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
+/* kontakti.html */
+.moco-contacts-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.moco-contacts-question h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: rgb(243, 135, 184);
+}
+
+.contacts-question-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(247, 239, 241);
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.contacts-question-form h3 {
+    font-size: 18px;
+    font-weight: 600;
+
+    align-self: self-start;
+    margin-left: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form>button {
+    align-self: center;
+    margin: 20px;
+
+}
+
+.poleta {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.poleta i {
+    margin-left: 10px;
+    color: rgb(243, 135, 184);
+}
+
+input[type="text"],
+[type="email"] {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin: 10px;
+
+}
+
+
+#ask {
+    width: 400px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.moco-info-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+
+}
+
+.info {
+    color: rgb(243, 135, 184);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+}
+
+/* footer */
+footer {
+    background-color: rgb(249, 213, 225);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-end;
+}
+
+/* .logo {
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.logo .in {
+ 
+    margin: 5px;
+}
+
+.logo .in a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+
+.moco-contacts a {
+    color: black;
+    text-transform: none;
+}
+
+.moco-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fasttouch {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fasttouch a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.moco-contacts i {
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+.moco-partners {
+    display: flex;
+    align-items: center;
+}
+
+.moco-partners img {
+    max-width: 100px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.web-page-text {
+    background-color: rgb(252, 228, 233);
+    text-align: center;
+}
